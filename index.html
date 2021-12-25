@@ -45,5 +45,30 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio fuga adipisci cupiditate! Vitae, perspiciatis quam ex repellendus nulla velit dolores dignissimos, beatae voluptatibus nobis, illo dicta non. Enim, delectus dolore! <br>
         </p>
     </div>
+
+
+<script>
+    let bird1 = document.getElementById('bird1');
+    let bird2 = document.getElementById('bird2');
+    let forest = document.getElementById('forest');
+    let text = document.getElementById('text');
+    let rocks = document.getElementById('rocks');
+    let water = document.getElementById('water');
+    let btn = document.getElementById('btn');
+
+    window.addEventListener('scroll',function(){
+        let value = this.scrollY;
+        // console.log(text.style.top);
+        text.style.top = 40 + value * -0.5 + "%";
+        // console.log(text.style.top);
+        bird1.style.top = value * -1.5 + 'px';
+        bird1.style.left = value * 2 + 'px';
+        bird2.style.top = value * -1.5 + 'px';
+        bird2.style.left = value * -5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        rocks.style.top = value * -0.12 + 'px';
+            });
+</script>
+
 </body>
 </html>

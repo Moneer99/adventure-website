@@ -135,6 +135,39 @@ section #text span{
     background:#fff;
 }
 
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100vh; */
+    object-fit: cover;
+    pointer-events: none;
+}
+/* ------------------ End section middle text and forest ,bird,rock  ----------------- */
+
+
+/* -------------------------------------------------------------------------- */
+/*                         section parallax scrolling                         */
+/* -------------------------------------------------------------------------- */
+.sec{
+    position: relative;
+    padding: 100px;
+    color: #fff;
+    background: var(--main-color);
+}
+.sec h2{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.sec p{
+    font-size: 1em;
+}
+
+/* --------------------- End section parallax scrolling --------------------- */
+
+
+
 
 
 
